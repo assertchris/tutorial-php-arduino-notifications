@@ -1,0 +1,308 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c6193972c1c5320f5f3843cbb370611b",
+    "content-hash": "c9b70d06fd93d69e0fac831fed00d850",
+    "packages": [
+        {
+            "name": "carica/chip",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThomasWeinert/carica-chip.git",
+                "reference": "c447d87f4449fab79f647b0aabbe9f3327742155"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThomasWeinert/carica-chip/zipball/c447d87f4449fab79f647b0aabbe9f3327742155",
+                "reference": "c447d87f4449fab79f647b0aabbe9f3327742155",
+                "shasum": ""
+            },
+            "require": {
+                "carica/io": "dev-master",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "carica/firmata": "dev-master",
+                "carica/gpio": "dev-master",
+                "phake/phake": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Carica\\Chip\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Weinert",
+                    "email": "thomas@weinert.info"
+                }
+            ],
+            "description": "Physical computing for PHP",
+            "homepage": "https://github.com/ThomasWeinert/carica-chip",
+            "keywords": [
+                "arduino",
+                "asynchronous-io",
+                "firmata",
+                "non-blocking-io"
+            ],
+            "time": "2016-10-07 10:05:49"
+        },
+        {
+            "name": "carica/firmata",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThomasWeinert/carica-firmata.git",
+                "reference": "fba5212235826ed4f7365ed6ab87ff2d85bafb64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThomasWeinert/carica-firmata/zipball/fba5212235826ed4f7365ed6ab87ff2d85bafb64",
+                "reference": "fba5212235826ed4f7365ed6ab87ff2d85bafb64",
+                "shasum": ""
+            },
+            "require": {
+                "carica/io": "dev-master",
+                "php": ">=5.4"
+            },
+            "provide": {
+                "carica/io-devices": "0.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Carica\\Firmata\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Weinert",
+                    "email": "thomas@weinert.info"
+                }
+            ],
+            "description": "Firmata client library",
+            "homepage": "https://github.com/ThomasWeinert/carica-firmata",
+            "keywords": [
+                "arduino",
+                "firmata"
+            ],
+            "time": "2016-10-07 12:13:45"
+        },
+        {
+            "name": "carica/io",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ThomasWeinert/carica-io.git",
+                "reference": "feb7aa35141443859fc8da37208ce3f9ac989858"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ThomasWeinert/carica-io/zipball/feb7aa35141443859fc8da37208ce3f9ac989858",
+                "reference": "feb7aa35141443859fc8da37208ce3f9ac989858",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Carica\\Io\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Weinert",
+                    "email": "thomas@weinert.info"
+                }
+            ],
+            "description": "Non blocking I/O for PHP",
+            "homepage": "https://github.com/ThomasWeinert/carica-io",
+            "keywords": [
+                "asynchronous-io",
+                "non-blocking-io"
+            ],
+            "time": "2016-10-07 09:49:30"
+        },
+        {
+            "name": "endroid/twitter",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/Twitter.git",
+                "reference": "6d0afaa24bd75e00fcda5e886320b6cdd79df79a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/Twitter/zipball/6d0afaa24bd75e00fcda5e886320b6cdd79df79a",
+                "reference": "6d0afaa24bd75e00fcda5e886320b6cdd79df79a",
+                "shasum": ""
+            },
+            "require": {
+                "kriswallsmith/buzz": "~0.10",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\Twitter\\": [
+                        "src/"
+                    ],
+                    "Endroid\\Twitter\\Tests\\": [
+                        "tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid Twitter",
+            "homepage": "https://github.com/endroid/Twitter",
+            "keywords": [
+                "endroid",
+                "twitter"
+            ],
+            "time": "2016-11-08 21:13:30"
+        },
+        {
+            "name": "kriswallsmith/buzz",
+            "version": "v0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/Buzz.git",
+                "reference": "d4041666c3ffb379af02a92dabe81c904b35fab8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/d4041666c3ffb379af02a92dabe81c904b35fab8",
+                "reference": "d4041666c3ffb379af02a92dabe81c904b35fab8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Buzz": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Wallsmith",
+                    "email": "kris.wallsmith@gmail.com",
+                    "homepage": "http://kriswallsmith.net/"
+                }
+            ],
+            "description": "Lightweight HTTP client",
+            "homepage": "https://github.com/kriswallsmith/Buzz",
+            "keywords": [
+                "curl",
+                "http client"
+            ],
+            "time": "2015-06-25 17:26:56"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause-Attribution"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2016-09-01 10:05:43"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "carica/firmata": 20,
+        "carica/chip": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

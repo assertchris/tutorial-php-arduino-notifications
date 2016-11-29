@@ -1,0 +1,15 @@
+{
+    "require": {
+        "carica/firmata": "dev-master",
+        "carica/chip": "dev-master",
+        "vlucas/phpdotenv": "^2.4",
+        "endroid/twitter": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Notifier\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
