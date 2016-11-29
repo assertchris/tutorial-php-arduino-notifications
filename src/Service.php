@@ -28,6 +28,8 @@ interface Service
     /**
      * Returns an array of pin color values,
      * for a common-anode RGB LED.
+     *
+     * @return int[]
      */
     public function colors();
 }

@@ -66,10 +66,6 @@ class Twitter implements Service
 
         $tweets = json_decode($response->getContent());
 
-        // print_r($parameters);
-        // print_r($tweets);
-        // exit;
-
         if (count($tweets) > 0) {
             $this->new = true;
             $this->since = (int) $tweets[0]->id;
@@ -98,6 +94,8 @@ class Twitter implements Service
 
     /**
      * @inheritdoc
+     *
+     * @return int[]
      */
     public function colors()
     {

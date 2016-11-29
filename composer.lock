@@ -4,58 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c6193972c1c5320f5f3843cbb370611b",
-    "content-hash": "c9b70d06fd93d69e0fac831fed00d850",
+    "hash": "dc4dbf00135d63340bb1767b5e9811eb",
+    "content-hash": "e9af70c975cdb44685d7e0818c616fb2",
     "packages": [
-        {
-            "name": "carica/chip",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ThomasWeinert/carica-chip.git",
-                "reference": "c447d87f4449fab79f647b0aabbe9f3327742155"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ThomasWeinert/carica-chip/zipball/c447d87f4449fab79f647b0aabbe9f3327742155",
-                "reference": "c447d87f4449fab79f647b0aabbe9f3327742155",
-                "shasum": ""
-            },
-            "require": {
-                "carica/io": "dev-master",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "carica/firmata": "dev-master",
-                "carica/gpio": "dev-master",
-                "phake/phake": "1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Carica\\Chip\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thomas Weinert",
-                    "email": "thomas@weinert.info"
-                }
-            ],
-            "description": "Physical computing for PHP",
-            "homepage": "https://github.com/ThomasWeinert/carica-chip",
-            "keywords": [
-                "arduino",
-                "asynchronous-io",
-                "firmata",
-                "non-blocking-io"
-            ],
-            "time": "2016-10-07 10:05:49"
-        },
         {
             "name": "carica/firmata",
             "version": "dev-master",
@@ -296,12 +247,12 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
-        "carica/firmata": 20,
-        "carica/chip": 20
+        "carica/io": 20,
+        "carica/firmata": 20
     },
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

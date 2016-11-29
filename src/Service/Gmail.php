@@ -12,28 +12,28 @@ class Gmail implements Service
     private $new = false;
 
     /**
-     * @var resource
-     */
-    private $inbox;
-
-    /**
      * @var array
      */
     private $emails = [];
 
+    /**
+     * @var string
+     */
     private $username;
 
+    /**
+     * @var string
+     */
     private $password;
 
+    /**
+     * @param string $username
+     * @param string $password
+     */
     public function __construct($username, $password)
     {
         $this->username = $username;
         $this->password = $password;
-
-        $this->inbox = imap_open(
-            "{imap.gmail.com:993/imap/ssl}INBOX",
-            $this->username, $this->password
-        );
     }
 
     /**
@@ -47,16 +47,16 @@ class Gmail implements Service
             return true;
         }
 
-        $this->inbox = imap_open(
+        $inbox = imap_open(
             "{imap.gmail.com:993/imap/ssl}INBOX",
             $this->username, $this->password
         );
 
-        if (!$this->inbox) {
+        if (!$inbox) {
             return false;
         }
 
-        $emails = imap_search($this->inbox, "ALL", SE_UID);
+        $emails = imap_search($inbox, "ALL", SE_UID);
 
         if ($emails) {
             foreach ($emails as $email) {
@@ -92,6 +92,8 @@ class Gmail implements Service
 
     /**
      * @inheritdoc
+     *
+     * @return int[]
      */
     public function colors()
     {

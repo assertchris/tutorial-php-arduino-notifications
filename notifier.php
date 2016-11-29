@@ -123,6 +123,7 @@ $board
                     $next = $services->dequeue();
 
                     if ($next[0]->name() === $service[0]->name()) {
+                        $service = null;
                         $next[0]->dismiss();
                         $next[1] = false;
                     }
